@@ -79,15 +79,15 @@ def _env_int(name: str, default: int) -> int:
         return default
 
 
-API_ID = _env_int("API_ID",32853799)
-API_HASH = os.getenv("API_HASH", "7618973ca6fa27183f6df27dfba88f26")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8960949500:AAG3hnB6RYcd3RMTum_dCFzC_OGeOHuUFK0")
-LOGGER_BOT_TOKEN = os.getenv("LOGGER_BOT_TOKEN", "8983071296:AAEvKG2TXCoHVC6RRWeeoxM-JOSIJly0MMQ")
+API_ID = _env_int("API_ID",0)
+API_HASH = os.getenv("API_HASH", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+LOGGER_BOT_TOKEN = os.getenv("LOGGER_BOT_TOKEN", "")
 
 if not API_ID or not API_HASH or not BOT_TOKEN:
     sys.exit("❌  API_ID, API_HASH and BOT_TOKEN must be set (see .env).")
     
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://brogemini1_db_user:maYciO6s2HkIWeUR@cluster0.qzckumw.mongodb.net/?appName=Cluster0")
+MONGO_URI = os.getenv("MONGO_URI", "")
 DB_NAME = os.getenv("DB_NAME", "nexa_bot")
 
 MAX_ACCOUNTS = _env_int("MAX_ACCOUNTS", 5)
