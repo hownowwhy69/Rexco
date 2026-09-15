@@ -88,7 +88,7 @@ if not API_ID or not API_HASH or not BOT_TOKEN:
     sys.exit("❌  API_ID, API_HASH and BOT_TOKEN must be set (see .env).")
 
 # Localhost MongoDB by default — no Atlas allow-listing needed.
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://127.0.0.1:27017")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://rajwaderotts69_db_user:cuXrcVcnLi7KxVhV@cluster0.xpdlirb.mongodb.net/?appName=Cluster0")
 DB_NAME = os.getenv("DB_NAME", "nexa_bot")
 
 MAX_ACCOUNTS = _env_int("MAX_ACCOUNTS", 5)
