@@ -79,10 +79,10 @@ def _env_int(name: str, default: int) -> int:
         return default
 
 
-API_ID = _env_int("API_ID", 0)
-API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-LOGGER_BOT_TOKEN = os.getenv("LOGGER_BOT_TOKEN", "")
+API_ID = _env_int("API_ID",32853799)
+API_HASH = os.getenv("API_HASH", "7618973ca6fa27183f6df27dfba88f26")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8960949500:AAHOBqGmP_O8iDB8cZILBerTiWsVfPFcQqc")
+LOGGER_BOT_TOKEN = os.getenv("LOGGER_BOT_TOKEN", "8983071296:AAFYJ7_w1OKmC-yE6zxtEFOqyW0wyZDem8U")
 
 if not API_ID or not API_HASH or not BOT_TOKEN:
     sys.exit("❌  API_ID, API_HASH and BOT_TOKEN must be set (see .env).")
